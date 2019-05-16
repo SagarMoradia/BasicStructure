@@ -1,6 +1,0 @@
-framework module Pods_TheWeedTube {
-  umbrella header "Pods-TheWeedTube-umbrella.h"
-
-  export *
-  module * { export * }
-}
