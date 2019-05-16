@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-UI-Medium.ttf">
+            <string>InterUI-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CellProfileAbout_ID" rowHeight="231" id="tzn-97-fPh" customClass="CellProfileAbout" customModule="TheWeedTube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="231"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tzn-97-fPh" id="a9z-c1-7yA">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="230.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5C2-nh-oQd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="229"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UjH-49-6yX" customClass="blackLabelCtrlModel" customModule="TheWeedTube" customModuleProvider="target">
+                                <rect key="frame" x="15" y="8" width="290" height="19.5"/>
+                                <fontDescription key="fontDescription" name="InterUI-Medium" family="Inter UI" pointSize="16"/>
+                                <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQP-Ie-QzE" customClass="darkGreyLabelCtrlModel" customModule="TheWeedTube" customModuleProvider="target">
+                                <rect key="frame" x="15" y="35.5" width="290" height="173.5"/>
+                                <fontDescription key="fontDescription" name="InterUI-Medium" family="Inter UI" pointSize="12"/>
+                                <color key="textColor" red="0.52549019607843139" green="0.52549019607843139" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UjH-49-6yX" firstAttribute="leading" secondItem="5C2-nh-oQd" secondAttribute="leading" constant="15" id="317-Rt-iz9"/>
+                            <constraint firstItem="mQP-Ie-QzE" firstAttribute="leading" secondItem="UjH-49-6yX" secondAttribute="leading" id="D43-q0-mYR"/>
+                            <constraint firstAttribute="trailing" secondItem="UjH-49-6yX" secondAttribute="trailing" constant="15" id="Vjb-6J-6ys"/>
+                            <constraint firstItem="UjH-49-6yX" firstAttribute="top" secondItem="5C2-nh-oQd" secondAttribute="top" constant="8" id="f4a-88-XXD"/>
+                            <constraint firstAttribute="bottom" secondItem="mQP-Ie-QzE" secondAttribute="bottom" constant="20" id="jvi-hn-3V3"/>
+                            <constraint firstItem="mQP-Ie-QzE" firstAttribute="top" secondItem="UjH-49-6yX" secondAttribute="bottom" constant="8" id="nR6-Xm-Vqe"/>
+                            <constraint firstItem="mQP-Ie-QzE" firstAttribute="trailing" secondItem="UjH-49-6yX" secondAttribute="trailing" id="s73-O1-V4z"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NV0-vQ-co8">
+                        <rect key="frame" x="0.0" y="229" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="uVd-Nf-ULS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="NV0-vQ-co8" firstAttribute="leading" secondItem="a9z-c1-7yA" secondAttribute="leading" id="3co-Wp-jxG"/>
+                    <constraint firstItem="5C2-nh-oQd" firstAttribute="top" secondItem="a9z-c1-7yA" secondAttribute="top" id="L1j-uh-ecZ"/>
+                    <constraint firstAttribute="bottom" secondItem="5C2-nh-oQd" secondAttribute="bottom" constant="1.5" id="LEE-65-2r1"/>
+                    <constraint firstAttribute="bottom" secondItem="NV0-vQ-co8" secondAttribute="bottom" constant="0.5" id="VLL-9V-ZLd"/>
+                    <constraint firstAttribute="trailing" secondItem="5C2-nh-oQd" secondAttribute="trailing" id="aUj-rP-wEN"/>
+                    <constraint firstItem="5C2-nh-oQd" firstAttribute="leading" secondItem="a9z-c1-7yA" secondAttribute="leading" id="krl-ZF-4Wr"/>
+                    <constraint firstAttribute="trailing" secondItem="NV0-vQ-co8" secondAttribute="trailing" id="nkJ-7k-muG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="JYE-ww-83I"/>
+            <connections>
+                <outlet property="lblAbout" destination="mQP-Ie-QzE" id="AXN-W0-Rcp"/>
+                <outlet property="lblTitle" destination="UjH-49-6yX" id="9y7-dw-6Kb"/>
+                <outlet property="viewSeparator" destination="NV0-vQ-co8" id="Fgk-hV-GP2"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="161.46926536731635"/>
+        </tableViewCell>
+    </objects>
+</document>

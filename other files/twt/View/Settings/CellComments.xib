@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-UI-Medium.ttf">
+            <string>InterUI-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CellComments" rowHeight="61" id="x9U-ZC-i9A" customClass="CellComments" customModule="TheWeedTube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x9U-ZC-i9A" id="Odw-H0-mIS">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sZV-sm-nCL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="60.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments &amp; activity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAw-J7-wTx">
+                                <rect key="frame" x="0.0" y="10" width="320" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Z7P-so-1jR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="InterUI-Medium" family="Inter UI" pointSize="22"/>
+                                <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LAw-J7-wTx" firstAttribute="top" secondItem="sZV-sm-nCL" secondAttribute="top" constant="10" id="PXM-l2-Qey"/>
+                            <constraint firstAttribute="bottom" secondItem="LAw-J7-wTx" secondAttribute="bottom" constant="10.5" id="RR3-UQ-jAE"/>
+                            <constraint firstAttribute="trailing" secondItem="LAw-J7-wTx" secondAttribute="trailing" id="WwC-B5-PGg"/>
+                            <constraint firstItem="LAw-J7-wTx" firstAttribute="leading" secondItem="sZV-sm-nCL" secondAttribute="leading" id="isu-qi-5p1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="sZV-sm-nCL" firstAttribute="top" secondItem="Odw-H0-mIS" secondAttribute="top" id="NUI-KK-3ji"/>
+                    <constraint firstItem="sZV-sm-nCL" firstAttribute="leading" secondItem="Odw-H0-mIS" secondAttribute="leading" id="mMO-ll-CHm"/>
+                    <constraint firstAttribute="trailing" secondItem="sZV-sm-nCL" secondAttribute="trailing" id="tQr-ox-Jea"/>
+                    <constraint firstAttribute="bottom" secondItem="sZV-sm-nCL" secondAttribute="bottom" id="y9c-0q-GWj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="Llf-Oo-SlQ"/>
+            <connections>
+                <outlet property="lblTitle" destination="LAw-J7-wTx" id="xHq-Zd-NDl"/>
+            </connections>
+            <point key="canvasLocation" x="131.19999999999999" y="142.57871064467767"/>
+        </tableViewCell>
+    </objects>
+</document>

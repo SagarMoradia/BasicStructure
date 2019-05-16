@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-UI-Medium.ttf">
+            <string>InterUI-Medium</string>
+        </array>
+        <array key="Inter-UI-Regular.ttf">
+            <string>InterUI-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="VideoDetailPlaylistView" customModule="TheWeedTube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R33-Ka-zP2">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nW5-I3-vEV">
+                            <rect key="frame" x="16" y="10" width="200" height="30"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playlist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBR-T3-wMn">
+                                    <rect key="frame" x="0.0" y="0.0" width="65" height="29.5"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="65" id="Lha-bS-lRn"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="InterUI-Medium" family="Inter UI" pointSize="17"/>
+                                    <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(69 Videos)" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sym-xf-64G">
+                                    <rect key="frame" x="65" y="5" width="66" height="19.5"/>
+                                    <fontDescription key="fontDescription" name="InterUI-Regular" family="Inter UI" pointSize="12"/>
+                                    <color key="textColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="nBR-T3-wMn" firstAttribute="top" secondItem="nW5-I3-vEV" secondAttribute="top" id="6m0-HB-ZZG"/>
+                                <constraint firstItem="sym-xf-64G" firstAttribute="top" secondItem="nW5-I3-vEV" secondAttribute="top" constant="5" id="ArE-Qz-Oeg"/>
+                                <constraint firstAttribute="bottom" secondItem="nBR-T3-wMn" secondAttribute="bottom" constant="0.5" id="IIn-mG-eBO"/>
+                                <constraint firstItem="sym-xf-64G" firstAttribute="leading" secondItem="nBR-T3-wMn" secondAttribute="trailing" id="Lr2-fg-mCj"/>
+                                <constraint firstAttribute="width" constant="200" id="Mv0-Ra-eKg"/>
+                                <constraint firstAttribute="height" constant="30" id="XAo-Pw-Nne"/>
+                                <constraint firstItem="nBR-T3-wMn" firstAttribute="leading" secondItem="nW5-I3-vEV" secondAttribute="leading" id="bdw-ex-VWV"/>
+                                <constraint firstAttribute="bottom" secondItem="sym-xf-64G" secondAttribute="bottom" constant="5.5" id="gMz-38-f6u"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYW-0W-BrJ">
+                            <rect key="frame" x="282" y="10" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="BUY-uq-s2D"/>
+                                <constraint firstAttribute="width" constant="30" id="Zuv-2N-eRP"/>
+                            </constraints>
+                            <state key="normal" image="down_arrow_detail"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.95686274510000002" green="0.97647058819999999" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="nW5-I3-vEV" firstAttribute="leading" secondItem="R33-Ka-zP2" secondAttribute="leading" constant="16" id="ZZK-fr-SlK"/>
+                        <constraint firstAttribute="bottom" secondItem="yYW-0W-BrJ" secondAttribute="bottom" constant="10" id="eWr-71-yQg"/>
+                        <constraint firstItem="yYW-0W-BrJ" firstAttribute="top" secondItem="R33-Ka-zP2" secondAttribute="top" constant="10" id="moD-6D-2ix"/>
+                        <constraint firstItem="nW5-I3-vEV" firstAttribute="centerY" secondItem="R33-Ka-zP2" secondAttribute="centerY" id="neS-gk-gYr"/>
+                        <constraint firstAttribute="trailing" secondItem="yYW-0W-BrJ" secondAttribute="trailing" constant="8" id="oKa-ki-zPw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="R33-Ka-zP2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Doh-Ug-JSi"/>
+                <constraint firstItem="R33-Ka-zP2" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="mTa-rq-LSh"/>
+                <constraint firstItem="R33-Ka-zP2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="mXs-gD-Yl6"/>
+                <constraint firstItem="R33-Ka-zP2" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="sIS-yP-AjE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnExpand" destination="yYW-0W-BrJ" id="Tza-fi-BMT"/>
+                <outlet property="lblTotalVideos" destination="sym-xf-64G" id="qRh-dG-GBN"/>
+            </connections>
+            <point key="canvasLocation" x="131.25" y="-129.40140845070422"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="down_arrow_detail" width="13" height="8"/>
+    </resources>
+</document>

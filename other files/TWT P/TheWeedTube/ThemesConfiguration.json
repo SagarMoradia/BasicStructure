@@ -1,0 +1,600 @@
+{
+    "data": [
+        {
+            "themeID": "1",
+            "themeName": "Light",
+            "themeProperties": {
+                "buttonControl": {
+                    "buttonBackgroundColor": {
+                        "r": "0",
+                        "g": "84",
+                        "b": "42",
+                        "a": "1"
+                    },
+                    "buttonForegroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "1"
+                    }
+                },
+                "FollowButtonCtrl": {
+                    "buttonBackgroundColor": {
+                        "r": "244",
+                        "g": "249",
+                        "b": "247",
+                        "a": "1"
+                    },
+                    "buttonForegroundColor": {
+                        "r": "0",
+                        "g": "84",
+                        "b": "42",
+                        "a": "1"
+                    }
+                },
+                "darkGreyButtonCtrl": {
+                    "buttonBackgroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "1"
+                    },
+                    "buttonForegroundColor": {
+                        "r": "134",
+                        "g": "134",
+                        "b": "134",
+                        "a": "1"
+                    }
+                },
+                "greenButtonCtrl": {
+                    "buttonBackgroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "0"
+                    },
+                    "buttonForegroundColor": {
+                        "r": "0",
+                        "g": "84",
+                        "b": "42",
+                        "a": "1"
+                    }
+                },
+                "viewControl": {
+                    "viewBackgroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "1"
+                    }
+                },
+                "underlineViewCtrl": {
+                    "viewBackgroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "1"
+                    }
+                },
+                "greenUnderlineViewCtrl": {
+                    "viewBackgroundColor": {
+                        "r": "0",
+                        "g": "84",
+                        "b": "42",
+                        "a": "1"
+                    }
+                },
+                "uploadingLightGreenViewCtrl": {
+                    "viewBackgroundColor": {
+                        "r": "216",
+                        "g": "230",
+                        "b": "223",
+                        "a": "1"
+                    }
+                },
+                "uploadLightGreenViewCtrl": {
+                    "viewBackgroundColor": {
+                        "r": "235",
+                        "g": "242",
+                        "b": "239",
+                        "a": "1"
+                    }
+                },
+                "uploadDarkGreyViewCtrl": {
+                    "viewBackgroundColor": {
+                        "r": "51",
+                        "g": "51",
+                        "b": "51",
+                        "a": "1"
+                    }
+                },
+                "errorRedViewCtrl": {
+                    "viewBackgroundColor": {
+                        "r": "209",
+                        "g": "0",
+                        "b": "51",
+                        "a": "1"
+                    }
+                },
+                "blackLabelCtrl": {
+                    "labelBackgroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "0"
+                    },
+                    "labelForegroundColor": {
+                        "r": "17",
+                        "g": "17",
+                        "b": "17",
+                        "a": "1"
+                    }
+                },
+                "darkGreyLabelCtrl": {
+                    "labelBackgroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "0"
+                    },
+                    "labelForegroundColor": {
+                        "r": "134",
+                        "g": "134",
+                        "b": "134",
+                        "a": "1"
+                    }
+                },
+                "lightGreyLabelCtrl": {
+                    "labelBackgroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "1"
+                    },
+                    "labelForegroundColor": {
+                        "r": "216",
+                        "g": "216",
+                        "b": "216",
+                        "a": "1"
+                    }
+                },
+                "whiteLabelCtrl": {
+                    "labelBackgroundColor": {
+                        "r": "0",
+                        "g": "84",
+                        "b": "42",
+                        "a": "0"
+                    },
+                    "labelForegroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "1"
+                    }
+                },
+                "greenLabelCtrl": {
+                    "labelBackgroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "0"
+                    },
+                    "labelForegroundColor": {
+                        "r": "0",
+                        "g": "84",
+                        "b": "42",
+                        "a": "1"
+                    }
+                },
+                "yellowLabelCtrl": {
+                    "labelBackgroundColor": {
+                        "r": "247",
+                        "g": "238",
+                        "b": "58",
+                        "a": "1"
+                    },
+                    "labelForegroundColor": {
+                        "r": "0",
+                        "g": "84",
+                        "b": "42",
+                        "a": "1"
+                    }
+                },
+                "textFieldCtrl": {
+                    "textBackgroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "0"
+                    },
+                    "textBorderColor": {
+                        "r": "204",
+                        "g": "204",
+                        "b": "204",
+                        "a": "1"
+                    },
+                    "textForegroundColor": {
+                        "r": "17",
+                        "g": "17",
+                        "b": "17",
+                        "a": "1"
+                    }
+                },
+                "textViewCtrl": {
+                    "textBackgroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "1"
+                    },
+                    "textBorderColor": {
+                        "r": "204",
+                        "g": "204",
+                        "b": "204",
+                        "a": "1"
+                    },
+                    "textForegroundColor": {
+                        "r": "17",
+                        "g": "17",
+                        "b": "17",
+                        "a": "1"
+                    }
+                },
+                "seekBar": {
+                    "playingSeekbarColor": {
+                        "r": "0",
+                        "g": "85",
+                        "b": "40",
+                        "a": "1"
+                    },
+                    "defaultSeekbarColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "1"
+                    }
+                },
+                "topNavigation": {
+                    "forgroundColor": {
+                        "r": "0",
+                        "g": "85",
+                        "b": "40",
+                        "a": "1"
+                    },
+                    "backgroundColor": {
+                        "r": "17",
+                        "g": "17",
+                        "b": "17",
+                        "a": "1"
+                    }
+                },
+                "bottomNavigation": {
+                    "forgroundColor": {
+                        "r": "0",
+                        "g": "85",
+                        "b": "40",
+                        "a": "1"
+                    },
+                    "backgroundColor": {
+                        "r": "0",
+                        "g": "85",
+                        "b": "40",
+                        "a": "1"
+                    }
+                },
+                "sideNavigation": {
+                    "forgroundColor": {
+                        "r": "0",
+                        "g": "85",
+                        "b": "40",
+                        "a": "1"
+                    },
+                    "backgroundColor": {
+                        "r": "0",
+                        "g": "85",
+                        "b": "40",
+                        "a": "1"
+                    }
+                }
+            }
+        },
+        {
+            "themeID": "2",
+            "themeName": "Dark",
+            "themeProperties": {
+                "buttonControl": {
+                    "buttonBackgroundColor": {
+                        "r": "0",
+                        "g": "166",
+                        "b": "83",
+                        "a": "1"
+                    },
+                    "buttonForegroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "1"
+                    }
+                },
+                "FollowButtonCtrl": {
+                    "buttonBackgroundColor": {
+                        "r": "244",
+                        "g": "249",
+                        "b": "247",
+                        "a": "1"
+                    },
+                    "buttonForegroundColor": {
+                        "r": "0",
+                        "g": "166",
+                        "b": "83",
+                        "a": "1"
+                    }
+                },
+                "darkGreyButtonCtrl": {
+                    "buttonBackgroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "0"
+                    },
+                    "buttonForegroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "1"
+                    }
+                },
+                "greenButtonCtrl": {
+                    "buttonBackgroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "0"
+                    },
+                    "buttonForegroundColor": {
+                        "r": "0",
+                        "g": "84",
+                        "b": "42",
+                        "a": "1"
+                    }
+                },
+                "viewControl": {
+                    "viewBackgroundColor": {
+                        "r": "17",
+                        "g": "17",
+                        "b": "17",
+                        "a": "1"
+                    }
+                },
+                "underlineViewCtrl": {
+                    "viewBackgroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "1"
+                    }
+                },
+                "greenUnderlineViewCtrl": {
+                    "viewBackgroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "1"
+                    }
+                },
+                "uploadingLightGreenViewCtrl": {
+                    "viewBackgroundColor": {
+                        "r": "216",
+                        "g": "230",
+                        "b": "223",
+                        "a": "1"
+                    }
+                },
+                "uploadLightGreenViewCtrl": {
+                    "viewBackgroundColor": {
+                        "r": "235",
+                        "g": "242",
+                        "b": "239",
+                        "a": "1"
+                    }
+                },
+                "uploadDarkGreyViewCtrl": {
+                    "viewBackgroundColor": {
+                        "r": "51",
+                        "g": "51",
+                        "b": "51",
+                        "a": "1"
+                    }
+                },
+                "errorRedViewCtrl": {
+                    "viewBackgroundColor": {
+                        "r": "209",
+                        "g": "0",
+                        "b": "51",
+                        "a": "1"
+                    }
+                },
+                "blackLabelCtrl": {
+                    "labelBackgroundColor": {
+                        "r": "17",
+                        "g": "17",
+                        "b": "17",
+                        "a": "0"
+                    },
+                    "labelForegroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "1"
+                    }
+                },
+                "darkGreyLabelCtrl": {
+                    "labelBackgroundColor": {
+                        "r": "17",
+                        "g": "17",
+                        "b": "17",
+                        "a": "0"
+                    },
+                    "labelForegroundColor": {
+                        "r": "134",
+                        "g": "134",
+                        "b": "134",
+                        "a": "1"
+                    }
+                },
+                "lightGreyLabelCtrl": {
+                    "labelBackgroundColor": {
+                        "r": "17",
+                        "g": "17",
+                        "b": "17",
+                        "a": "1"
+                    },
+                    "labelForegroundColor": {
+                        "r": "216",
+                        "g": "216",
+                        "b": "216",
+                        "a": "1"
+                    }
+                },
+                "whiteLabelCtrl": {
+                    "labelBackgroundColor": {
+                        "r": "17",
+                        "g": "17",
+                        "b": "17",
+                        "a": "0"
+                    },
+                    "labelForegroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "1"
+                    }
+                },
+                "greenLabelCtrl": {
+                    "labelBackgroundColor": {
+                        "r": "17",
+                        "g": "17",
+                        "b": "17",
+                        "a": "0"
+                    },
+                    "labelForegroundColor": {
+                        "r": "0",
+                        "g": "166",
+                        "b": "83",
+                        "a": "1"
+                    }
+                },
+                "yellowLabelCtrl": {
+                    "labelBackgroundColor": {
+                        "r": "247",
+                        "g": "238",
+                        "b": "58",
+                        "a": "1"
+                    },
+                    "labelForegroundColor": {
+                        "r": "0",
+                        "g": "166",
+                        "b": "83",
+                        "a": "1"
+                    }
+                },
+                "textFieldCtrl": {
+                    "textBackgroundColor": {
+                        "r": "17",
+                        "g": "17",
+                        "b": "17",
+                        "a": "0"
+                    },
+                    "textBorderColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "1"
+                    },
+                    "textForegroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "1"
+                    }
+                },
+                "textViewCtrl": {
+                    "textBackgroundColor": {
+                        "r": "17",
+                        "g": "17",
+                        "b": "17",
+                        "a": "1"
+                    },
+                    "textBorderColor": {
+                        "r": "204",
+                        "g": "204",
+                        "b": "204",
+                        "a": "1"
+                    },
+                    "textForegroundColor": {
+                        "r": "255",
+                        "g": "255",
+                        "b": "255",
+                        "a": "1"
+                    }
+                },
+                "seekBar": {
+                    "playingSeekbarColor": {
+                        "r": "0",
+                        "g": "206",
+                        "b": "19",
+                        "a": "18"
+                    },
+                    "defaultSeekbarColor": {
+                        "r": "204",
+                        "g": "204",
+                        "b": "204",
+                        "a": "1"
+                    }
+                },
+                "topNavigation": {
+                    "forgroundColor": {
+                        "r": "34",
+                        "g": "34",
+                        "b": "34",
+                        "a": "1"
+                    },
+                    "backgroundColor": {
+                        "r": "34",
+                        "g": "34",
+                        "b": "34",
+                        "a": "1"
+                    }
+                },
+                "bottomNavigation": {
+                    "forgroundColor": {
+                        "r": "34",
+                        "g": "34",
+                        "b": "34",
+                        "a": "1"
+                    },
+                    "backgroundColor": {
+                        "r": "34",
+                        "g": "34",
+                        "b": "34",
+                        "a": "1"
+                    }
+                },
+                "sideNavigation": {
+                    "forgroundColor": {
+                        "r": "34",
+                        "g": "34",
+                        "b": "34",
+                        "a": "1"
+                    },
+                    "backgroundColor": {
+                        "r": "34",
+                        "g": "34",
+                        "b": "34",
+                        "a": "1"
+                    }
+                }
+            }
+        }
+    ]
+}

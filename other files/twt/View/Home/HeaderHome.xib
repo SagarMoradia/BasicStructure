@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-UI-Medium.ttf">
+            <string>InterUI-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderHome" customModule="TheWeedTube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bkG-ZO-yss">
+                    <rect key="frame" x="0.0" y="8" width="320" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="a3z-qW-cKO"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recently Uploaded" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N1N-J3-tUU">
+                    <rect key="frame" x="13" y="66" width="294" height="20"/>
+                    <fontDescription key="fontDescription" name="InterUI-Medium" family="Inter UI" pointSize="21"/>
+                    <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="N1N-J3-tUU" secondAttribute="trailing" constant="13" id="Qeb-hF-UXW"/>
+                <constraint firstItem="bkG-ZO-yss" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VRQ-Gh-e5p"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="N1N-J3-tUU" secondAttribute="bottom" constant="8" id="feD-O8-gYk"/>
+                <constraint firstItem="N1N-J3-tUU" firstAttribute="top" secondItem="bkG-ZO-yss" secondAttribute="bottom" constant="8" id="hEq-EO-zR3"/>
+                <constraint firstItem="bkG-ZO-yss" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="qyd-wD-vmu"/>
+                <constraint firstItem="N1N-J3-tUU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="13" id="rTc-Ey-9Ei"/>
+                <constraint firstItem="bkG-ZO-yss" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="yOl-JP-0ia"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="adViewHeight" destination="a3z-qW-cKO" id="Gm1-26-6DM"/>
+                <outlet property="lblHeaderTitle" destination="N1N-J3-tUU" id="ryX-j5-GkV"/>
+                <outlet property="topTitleConst" destination="hEq-EO-zR3" id="acM-CK-KVD"/>
+                <outlet property="viewAd" destination="bkG-ZO-yss" id="4hp-h9-0Rb"/>
+            </connections>
+            <point key="canvasLocation" x="38.399999999999999" y="58.920539730134934"/>
+        </view>
+    </objects>
+</document>

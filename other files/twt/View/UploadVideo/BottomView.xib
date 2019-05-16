@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2GX-A9-Mft" customClass="BottomView" customModule="TheWeedTube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTx-9q-dG7" customClass="UIControl">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="actionHide:" destination="2GX-A9-Mft" eventType="touchUpInside" id="NWb-zg-zIz"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QpA-bl-olX">
+                    <rect key="frame" x="0.0" y="478" width="320" height="90"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sat-HK-Q2B">
+                    <rect key="frame" x="0.0" y="478" width="320" height="90"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zu4-fV-J5I">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="2GX-A9-Mft" id="eah-Dj-Snd"/>
+                                <outlet property="delegate" destination="2GX-A9-Mft" id="vEy-UX-kOY"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="zu4-fV-J5I" secondAttribute="bottom" id="X8J-PU-sNQ"/>
+                        <constraint firstAttribute="height" constant="90" id="oKY-UA-fDe"/>
+                        <constraint firstItem="zu4-fV-J5I" firstAttribute="top" secondItem="sat-HK-Q2B" secondAttribute="top" id="rid-Ma-hga"/>
+                        <constraint firstAttribute="trailing" secondItem="zu4-fV-J5I" secondAttribute="trailing" id="u11-ae-WAo"/>
+                        <constraint firstItem="zu4-fV-J5I" firstAttribute="leading" secondItem="sat-HK-Q2B" secondAttribute="leading" id="wSk-So-5be"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="PTx-9q-dG7" firstAttribute="leading" secondItem="2GX-A9-Mft" secondAttribute="leading" id="1XT-Dn-LDu"/>
+                <constraint firstItem="QpA-bl-olX" firstAttribute="top" secondItem="sat-HK-Q2B" secondAttribute="top" id="Bbv-RT-Dzc"/>
+                <constraint firstItem="sat-HK-Q2B" firstAttribute="trailing" secondItem="nIF-d2-e1R" secondAttribute="trailing" id="CDP-QK-0il"/>
+                <constraint firstItem="PTx-9q-dG7" firstAttribute="bottom" secondItem="2GX-A9-Mft" secondAttribute="bottom" id="Hx8-lb-mio"/>
+                <constraint firstItem="sat-HK-Q2B" firstAttribute="leading" secondItem="nIF-d2-e1R" secondAttribute="leading" id="JKs-ql-bfF"/>
+                <constraint firstAttribute="bottom" secondItem="QpA-bl-olX" secondAttribute="bottom" id="Jfx-sg-Ihn"/>
+                <constraint firstItem="PTx-9q-dG7" firstAttribute="top" secondItem="2GX-A9-Mft" secondAttribute="top" id="XCv-87-hKk"/>
+                <constraint firstItem="PTx-9q-dG7" firstAttribute="trailing" secondItem="2GX-A9-Mft" secondAttribute="trailing" id="Z9J-iF-fHs"/>
+                <constraint firstItem="QpA-bl-olX" firstAttribute="trailing" secondItem="2GX-A9-Mft" secondAttribute="trailing" id="k9X-ZI-BCf"/>
+                <constraint firstItem="nIF-d2-e1R" firstAttribute="bottom" secondItem="sat-HK-Q2B" secondAttribute="bottom" id="txu-2u-HgE"/>
+                <constraint firstItem="QpA-bl-olX" firstAttribute="leading" secondItem="2GX-A9-Mft" secondAttribute="leading" id="wRl-Pa-di9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="nIF-d2-e1R"/>
+            <connections>
+                <outlet property="tblView" destination="zu4-fV-J5I" id="T6s-5l-Mh8"/>
+                <outlet property="viewMain" destination="PTx-9q-dG7" id="6aw-pe-6Yg"/>
+                <outlet property="viewParent" destination="sat-HK-Q2B" id="m76-Zq-rm5"/>
+            </connections>
+            <point key="canvasLocation" x="129.375" y="153.16901408450704"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CellLinkButton_ID" id="9xx-HR-l7b" customClass="CellLinkButton" customModule="TheWeedTube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="72.5" height="36"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="72.5" height="36"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3xg-0U-sVU">
+                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="36"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BxZ-iV-HjA">
+                                <rect key="frame" x="29" y="10.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="ZN7-Ua-85h"/>
+                                    <constraint firstAttribute="height" constant="15" id="k6F-rE-19V"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tpz-lE-jnb">
+                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="36"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Tpz-lE-jnb" secondAttribute="trailing" id="0sh-9B-Qtv"/>
+                            <constraint firstItem="Tpz-lE-jnb" firstAttribute="leading" secondItem="3xg-0U-sVU" secondAttribute="leading" id="9Ib-vZ-uAb"/>
+                            <constraint firstItem="Tpz-lE-jnb" firstAttribute="top" secondItem="3xg-0U-sVU" secondAttribute="top" id="c4r-CF-1cT"/>
+                            <constraint firstItem="BxZ-iV-HjA" firstAttribute="centerX" secondItem="3xg-0U-sVU" secondAttribute="centerX" id="eLE-c9-Iug"/>
+                            <constraint firstAttribute="bottom" secondItem="Tpz-lE-jnb" secondAttribute="bottom" id="paA-cM-vKx"/>
+                            <constraint firstItem="BxZ-iV-HjA" firstAttribute="centerY" secondItem="3xg-0U-sVU" secondAttribute="centerY" id="x3q-u4-88m"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3xg-0U-sVU" secondAttribute="trailing" id="cIp-E9-aIp"/>
+                <constraint firstItem="3xg-0U-sVU" firstAttribute="top" secondItem="9xx-HR-l7b" secondAttribute="top" id="jOa-Ff-UdD"/>
+                <constraint firstAttribute="bottom" secondItem="3xg-0U-sVU" secondAttribute="bottom" id="l7v-w1-T6K"/>
+                <constraint firstItem="3xg-0U-sVU" firstAttribute="leading" secondItem="9xx-HR-l7b" secondAttribute="leading" id="rdt-aA-59i"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="sLx-o9-5Ub"/>
+            <connections>
+                <outlet property="btnLink" destination="Tpz-lE-jnb" id="6K5-vR-jXa"/>
+                <outlet property="imgvBtn" destination="BxZ-iV-HjA" id="wAb-5l-18T"/>
+            </connections>
+            <point key="canvasLocation" x="-2" y="-88"/>
+        </collectionViewCell>
+    </objects>
+</document>

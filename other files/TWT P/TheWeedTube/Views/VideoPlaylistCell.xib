@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-UI-Medium.ttf">
+            <string>InterUI-Medium</string>
+        </array>
+        <array key="Inter-UI-Regular.ttf">
+            <string>InterUI-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoPlaylistCell" rowHeight="81" id="KGk-i7-Jjw" customClass="VideoPlaylistCell" customModule="TheWeedTube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SD2-i7-WZr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="80.5"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZK-P0-dBK">
+                                <rect key="frame" x="16" y="35.5" width="10" height="10"/>
+                                <subviews>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="KHY-p1-whK">
+                                        <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOi-oo-eXx">
+                                        <rect key="frame" x="0.0" y="0.0" width="10" height="10"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="InterUI-Regular" family="Inter UI" pointSize="10"/>
+                                        <color key="textColor" red="0.52549019607843139" green="0.52549019607843139" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="7pg-PG-cTt"/>
+                                    <constraint firstAttribute="width" constant="10" id="AzM-1l-FDo"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle2Copy7" translatesAutoresizingMaskIntoConstraints="NO" id="VPF-DK-6TO">
+                                <rect key="frame" x="40" y="5" width="100.5" height="70.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70.5" id="8aP-ry-Kp5"/>
+                                    <constraint firstAttribute="width" secondItem="VPF-DK-6TO" secondAttribute="height" multiplier="10:7" id="nR1-yJ-txZ"/>
+                                </constraints>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSH-4J-NEs">
+                                <rect key="frame" x="77.5" y="13" width="54.5" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02:04:12" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXn-si-KAr" customClass="whiteLabelCtrlModel" customModule="TheWeedTube" customModuleProvider="target">
+                                        <rect key="frame" x="2" y="0.0" width="50.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="InterUI-Medium" family="Inter UI" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="zXn-si-KAr" secondAttribute="trailing" constant="2" id="5W5-IU-Sh7"/>
+                                    <constraint firstAttribute="height" constant="20" id="Gmm-L6-vt3"/>
+                                    <constraint firstItem="zXn-si-KAr" firstAttribute="leading" secondItem="CSH-4J-NEs" secondAttribute="leading" constant="2" id="TGL-Gf-C9b"/>
+                                    <constraint firstAttribute="bottom" secondItem="zXn-si-KAr" secondAttribute="bottom" id="a3d-md-YqQ"/>
+                                    <constraint firstItem="zXn-si-KAr" firstAttribute="top" secondItem="CSH-4J-NEs" secondAttribute="top" id="fVc-pF-BZf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="paW-PA-3Jn"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Different With Nlp" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOt-BT-hGI">
+                                <rect key="frame" x="150.5" y="6" width="135.5" height="14.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="InterUI-Medium" family="Inter UI" pointSize="12"/>
+                                <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Zachary Smith " lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a10-N7-OgS">
+                                <rect key="frame" x="150.5" y="22.5" width="78.5" height="13.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="InterUI-Regular" family="Inter UI" pointSize="11"/>
+                                <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ox-ik-NTT">
+                                <rect key="frame" x="290" y="8" width="22" height="22"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="tIc-Gw-q17"/>
+                                    <constraint firstAttribute="height" constant="22" id="z7Z-vI-krS"/>
+                                </constraints>
+                                <state key="normal" image="more_gray"/>
+                                <connections>
+                                    <action selector="btnMoreTapWithSender:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="wff-fr-nKY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.97647058823529409" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="a10-N7-OgS" firstAttribute="leading" secondItem="IOt-BT-hGI" secondAttribute="leading" id="2uC-qG-RcS"/>
+                            <constraint firstItem="VPF-DK-6TO" firstAttribute="top" secondItem="SD2-i7-WZr" secondAttribute="top" constant="5" id="4ef-yL-vLT"/>
+                            <constraint firstAttribute="trailing" secondItem="8Ox-ik-NTT" secondAttribute="trailing" constant="8" id="7mU-jY-gbh"/>
+                            <constraint firstItem="8Ox-ik-NTT" firstAttribute="leading" secondItem="IOt-BT-hGI" secondAttribute="trailing" constant="4" id="DI3-r1-0TY"/>
+                            <constraint firstAttribute="bottom" secondItem="VPF-DK-6TO" secondAttribute="bottom" constant="5" id="Dgm-Dx-Evz"/>
+                            <constraint firstItem="IOt-BT-hGI" firstAttribute="leading" secondItem="CSH-4J-NEs" secondAttribute="trailing" constant="18.5" id="EsB-yS-bOe"/>
+                            <constraint firstItem="IOt-BT-hGI" firstAttribute="top" secondItem="SD2-i7-WZr" secondAttribute="top" constant="6" id="LXG-uU-42j"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="a10-N7-OgS" secondAttribute="trailing" constant="20" id="UoC-l1-kvQ"/>
+                            <constraint firstItem="HZK-P0-dBK" firstAttribute="leading" secondItem="SD2-i7-WZr" secondAttribute="leading" constant="16" id="Vjo-aE-QUX"/>
+                            <constraint firstItem="HZK-P0-dBK" firstAttribute="centerY" secondItem="SD2-i7-WZr" secondAttribute="centerY" id="XHd-zq-ZSm"/>
+                            <constraint firstItem="a10-N7-OgS" firstAttribute="top" secondItem="IOt-BT-hGI" secondAttribute="bottom" constant="2" id="b4O-ds-RLO"/>
+                            <constraint firstItem="CSH-4J-NEs" firstAttribute="top" secondItem="SD2-i7-WZr" secondAttribute="top" constant="13" id="cgU-bR-hN6"/>
+                            <constraint firstItem="VPF-DK-6TO" firstAttribute="leading" secondItem="HZK-P0-dBK" secondAttribute="trailing" constant="14" id="nw9-Di-0t2"/>
+                            <constraint firstItem="8Ox-ik-NTT" firstAttribute="top" secondItem="SD2-i7-WZr" secondAttribute="top" constant="8" id="tVW-Cf-1s0"/>
+                            <constraint firstItem="IOt-BT-hGI" firstAttribute="leading" secondItem="VPF-DK-6TO" secondAttribute="trailing" constant="10" id="zX0-wO-V7M"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="SD2-i7-WZr" secondAttribute="trailing" id="NgX-N3-G3i"/>
+                    <constraint firstAttribute="bottom" secondItem="SD2-i7-WZr" secondAttribute="bottom" id="ZWv-kg-adM"/>
+                    <constraint firstItem="SD2-i7-WZr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hSk-Zc-Bnj"/>
+                    <constraint firstItem="SD2-i7-WZr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nKz-9p-p2l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnMore" destination="8Ox-ik-NTT" id="lRs-TH-vMv"/>
+                <outlet property="imgVideo" destination="VPF-DK-6TO" id="4Tz-y5-pqa"/>
+                <outlet property="imgVideoPlay" destination="KHY-p1-whK" id="NCX-9X-gPR"/>
+                <outlet property="lblVideoAutherName" destination="a10-N7-OgS" id="n8r-fu-kUV"/>
+                <outlet property="lblVideoCount" destination="EOi-oo-eXx" id="vLj-xS-SAh"/>
+                <outlet property="lblVideoDuration" destination="zXn-si-KAr" id="hPD-la-8fY"/>
+                <outlet property="lblVideoTitle" destination="IOt-BT-hGI" id="X7F-i2-7RT"/>
+            </connections>
+            <point key="canvasLocation" x="181.875" y="90.316901408450704"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="more_gray" width="3" height="13"/>
+        <image name="play" width="27" height="32"/>
+        <image name="rectangle2Copy7" width="437" height="245"/>
+    </resources>
+</document>

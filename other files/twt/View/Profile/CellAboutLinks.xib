@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-UI-Medium.ttf">
+            <string>InterUI-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CellAboutLinks_ID" rowHeight="86" id="tzn-97-fPh" customClass="CellAboutLinks" customModule="TheWeedTube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tzn-97-fPh" id="a9z-c1-7yA">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="85.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5C2-nh-oQd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q04-ZV-WkO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="KFe-XT-6bM"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Links" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQP-Ie-QzE" customClass="blackLabelCtrlModel" customModule="TheWeedTube" customModuleProvider="target">
+                                <rect key="frame" x="15" y="8" width="290" height="19.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="19.5" id="Ag1-ve-2jO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="InterUI-Medium" family="Inter UI" pointSize="16"/>
+                                <color key="textColor" red="0.066666666666666666" green="0.066666666666666666" blue="0.066666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XnD-QK-CGJ">
+                                <rect key="frame" x="15" y="35.5" width="290" height="36"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="250" constant="36" id="GES-YK-rbg"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aVQ-Nn-66b">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <connections>
+                                    <outlet property="dataSource" destination="tzn-97-fPh" id="HXE-i8-Vbx"/>
+                                    <outlet property="delegate" destination="tzn-97-fPh" id="4Uj-U5-Buj"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GFQ-Rk-zPe">
+                                <rect key="frame" x="0.0" y="84" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="inW-mB-NNw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GFQ-Rk-zPe" secondAttribute="trailing" id="27g-BU-GF5"/>
+                            <constraint firstItem="XnD-QK-CGJ" firstAttribute="leading" secondItem="5C2-nh-oQd" secondAttribute="leading" constant="15" id="2Oj-8y-eNm"/>
+                            <constraint firstItem="GFQ-Rk-zPe" firstAttribute="leading" secondItem="5C2-nh-oQd" secondAttribute="leading" id="2av-rj-SiB"/>
+                            <constraint firstItem="GFQ-Rk-zPe" firstAttribute="top" relation="greaterThanOrEqual" secondItem="XnD-QK-CGJ" secondAttribute="bottom" constant="12" id="90c-f3-Ood"/>
+                            <constraint firstAttribute="trailing" secondItem="mQP-Ie-QzE" secondAttribute="trailing" constant="15" id="FNA-gv-aea"/>
+                            <constraint firstItem="mQP-Ie-QzE" firstAttribute="leading" secondItem="5C2-nh-oQd" secondAttribute="leading" constant="15" id="NAX-e7-NaH"/>
+                            <constraint firstItem="q04-ZV-WkO" firstAttribute="leading" secondItem="5C2-nh-oQd" secondAttribute="leading" id="P2B-Dj-VD8"/>
+                            <constraint firstAttribute="bottom" secondItem="GFQ-Rk-zPe" secondAttribute="bottom" id="PX1-GU-WP4"/>
+                            <constraint firstAttribute="trailing" secondItem="q04-ZV-WkO" secondAttribute="trailing" id="gBb-tE-pJs"/>
+                            <constraint firstAttribute="trailing" secondItem="XnD-QK-CGJ" secondAttribute="trailing" constant="15" id="r81-fi-Yle"/>
+                            <constraint firstItem="q04-ZV-WkO" firstAttribute="top" secondItem="5C2-nh-oQd" secondAttribute="top" id="ruA-XQ-Iqr"/>
+                            <constraint firstItem="mQP-Ie-QzE" firstAttribute="top" secondItem="q04-ZV-WkO" secondAttribute="bottom" constant="7" id="uH2-35-0Io"/>
+                            <constraint firstItem="XnD-QK-CGJ" firstAttribute="top" secondItem="mQP-Ie-QzE" secondAttribute="bottom" constant="8" id="wVu-SF-vnE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="5C2-nh-oQd" firstAttribute="top" secondItem="a9z-c1-7yA" secondAttribute="top" id="L1j-uh-ecZ"/>
+                    <constraint firstAttribute="bottom" secondItem="5C2-nh-oQd" secondAttribute="bottom" constant="0.5" id="LEE-65-2r1"/>
+                    <constraint firstAttribute="trailing" secondItem="5C2-nh-oQd" secondAttribute="trailing" id="aUj-rP-wEN"/>
+                    <constraint firstItem="5C2-nh-oQd" firstAttribute="leading" secondItem="a9z-c1-7yA" secondAttribute="leading" id="krl-ZF-4Wr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="JYE-ww-83I"/>
+            <connections>
+                <outlet property="clvLinks" destination="XnD-QK-CGJ" id="yJD-7t-jWA"/>
+                <outlet property="lblLinks" destination="mQP-Ie-QzE" id="nfd-ks-hRa"/>
+                <outlet property="viewSeparator" destination="GFQ-Rk-zPe" id="YhL-ZL-6iY"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="96.251874062968525"/>
+        </tableViewCell>
+    </objects>
+</document>

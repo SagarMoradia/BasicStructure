@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-UI-Medium.ttf">
+            <string>InterUI-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellMore" rowHeight="51" id="sOU-lI-CdO" customClass="CellMore" customModule="TheWeedTube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sOU-lI-CdO" id="pZ7-Iy-d78">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYe-rN-7Kk" customClass="viewControlModel" customModule="TheWeedTube" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HN4-2D-30G">
+                                <rect key="frame" x="15" y="5" width="40" height="40"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notifications" translatesAutoresizingMaskIntoConstraints="NO" id="JiS-BF-PBB">
+                                        <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.97647058823529409" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="16y-TO-KCT"/>
+                                    <constraint firstAttribute="trailing" secondItem="JiS-BF-PBB" secondAttribute="trailing" constant="10" id="GLe-Xs-G6S"/>
+                                    <constraint firstItem="JiS-BF-PBB" firstAttribute="top" secondItem="HN4-2D-30G" secondAttribute="top" constant="10" id="NLx-mx-ydy"/>
+                                    <constraint firstAttribute="height" constant="40" id="WJB-1E-QBP"/>
+                                    <constraint firstAttribute="bottom" secondItem="JiS-BF-PBB" secondAttribute="bottom" constant="10" id="dTL-WP-K7T"/>
+                                    <constraint firstItem="JiS-BF-PBB" firstAttribute="leading" secondItem="HN4-2D-30G" secondAttribute="leading" constant="10" id="g9N-NO-qZp"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMF-b2-chw" customClass="blackLabelCtrlModel" customModule="TheWeedTube" customModuleProvider="target">
+                                <rect key="frame" x="70" y="10" width="235" height="30"/>
+                                <fontDescription key="fontDescription" name="InterUI-Medium" family="Inter UI" pointSize="14"/>
+                                <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OL6-0o-pJ4">
+                                <rect key="frame" x="285" y="15" width="20" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zd-dy-VuX" customClass="yellowLabelCtrlModel" customModule="TheWeedTube" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <fontDescription key="fontDescription" name="InterUI-Medium" family="Inter UI" pointSize="11"/>
+                                        <color key="textColor" red="0.0" green="0.33333333333333331" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.93333333333333335" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="4Zd-dy-VuX" firstAttribute="top" secondItem="OL6-0o-pJ4" secondAttribute="top" id="68T-W6-Z67"/>
+                                    <constraint firstAttribute="width" constant="20" id="Fnq-iG-hDk"/>
+                                    <constraint firstAttribute="bottom" secondItem="4Zd-dy-VuX" secondAttribute="bottom" id="Mx1-nB-SC6"/>
+                                    <constraint firstAttribute="height" constant="20" id="PVn-z6-m0F"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Zd-dy-VuX" secondAttribute="trailing" id="V6F-Lo-nFT"/>
+                                    <constraint firstItem="4Zd-dy-VuX" firstAttribute="leading" secondItem="OL6-0o-pJ4" secondAttribute="leading" id="XIC-wG-nsM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SMF-b2-chw" firstAttribute="top" secondItem="mYe-rN-7Kk" secondAttribute="top" constant="10" id="IBv-Oo-qwO"/>
+                            <constraint firstAttribute="trailing" secondItem="SMF-b2-chw" secondAttribute="trailing" constant="15" id="MHP-et-eMJ"/>
+                            <constraint firstAttribute="trailing" secondItem="OL6-0o-pJ4" secondAttribute="trailing" constant="15" id="NKn-oM-Wg5"/>
+                            <constraint firstAttribute="bottom" secondItem="OL6-0o-pJ4" secondAttribute="bottom" constant="15.5" id="Qq7-LY-Ggz"/>
+                            <constraint firstItem="HN4-2D-30G" firstAttribute="top" secondItem="mYe-rN-7Kk" secondAttribute="top" constant="5" id="VLA-4p-lw9"/>
+                            <constraint firstItem="HN4-2D-30G" firstAttribute="leading" secondItem="mYe-rN-7Kk" secondAttribute="leading" constant="15" id="dft-5T-0mL"/>
+                            <constraint firstAttribute="bottom" secondItem="HN4-2D-30G" secondAttribute="bottom" constant="5.5" id="ngE-9u-54i"/>
+                            <constraint firstItem="OL6-0o-pJ4" firstAttribute="top" secondItem="mYe-rN-7Kk" secondAttribute="top" constant="15" id="qs8-UN-nMr"/>
+                            <constraint firstAttribute="bottom" secondItem="SMF-b2-chw" secondAttribute="bottom" constant="10.5" id="uM6-5i-hwp"/>
+                            <constraint firstItem="SMF-b2-chw" firstAttribute="leading" secondItem="HN4-2D-30G" secondAttribute="trailing" constant="15" id="zOn-Yf-6dp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="mYe-rN-7Kk" firstAttribute="leading" secondItem="pZ7-Iy-d78" secondAttribute="leading" id="fw5-Q7-DoQ"/>
+                    <constraint firstAttribute="trailing" secondItem="mYe-rN-7Kk" secondAttribute="trailing" id="hv6-TX-tzn"/>
+                    <constraint firstItem="mYe-rN-7Kk" firstAttribute="top" secondItem="pZ7-Iy-d78" secondAttribute="top" id="mQB-0y-eF3"/>
+                    <constraint firstAttribute="bottom" secondItem="mYe-rN-7Kk" secondAttribute="bottom" id="wOU-OR-Euc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="QeU-2o-EvW"/>
+            <connections>
+                <outlet property="imgView" destination="JiS-BF-PBB" id="qx9-IP-1yW"/>
+                <outlet property="lblCount" destination="4Zd-dy-VuX" id="G0a-U9-RM6"/>
+                <outlet property="lblName" destination="SMF-b2-chw" id="eMi-jB-hiD"/>
+                <outlet property="viewBadge" destination="OL6-0o-pJ4" id="qNT-OT-w9D"/>
+                <outlet property="viewTop" destination="HN4-2D-30G" id="bSN-eT-LF8"/>
+            </connections>
+            <point key="canvasLocation" x="131.19999999999999" y="142.57871064467767"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="notifications" width="22" height="20"/>
+    </resources>
+</document>
